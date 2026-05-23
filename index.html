@@ -63,12 +63,33 @@
         color: var(--muted);
         line-height: 1.6;
       }
+
+      .contact {
+        display: grid;
+        gap: 0.4rem;
+        margin-top: 0.5rem;
+        color: var(--text);
+        font-weight: 600;
+      }
+
+      .contact a {
+        color: var(--blue);
+        text-decoration: none;
+      }
+
+      .contact a:hover {
+        text-decoration: underline;
+      }
     </style>
   </head>
   <body>
     <main class="wrap" aria-label="Site em construção">
       <img class="logo" src="media/logo/logo_cropped.png" alt="SparkLusa" />
       <p class="message">Site under construction</p>
+      <div class="contact" aria-label="Contactos">
+        <a href="mailto:geral@sparklusa.com">geral@sparklusa.com</a>
+        <a href="tel:+351918395512">CEO - Gonçalo Alves: 351 918 395 512</a>
+      </div>
     </main>
   </body>
 </html>
