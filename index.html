@@ -1,164 +1,323 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-PT">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SPARKLUSA | Soluções de Energia Solar</title>
+    <meta
+      name="description"
+      content="SparkLusa - energia solar, instalações elétricas, iluminação exterior e carregadores VE no Algarve e em Portugal."
+    />
+    <title>SparkLusa | Energia Solar e Soluções Elétricas em Portugal</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header">
-      <div class="container">
-        <a class="brand" href="#">
-          <img src="media/logo/logo_cropped.png" alt="SPARKLUSA logo" />
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="SparkLusa">
+          <img src="media/logo/logo_cropped.png" alt="SparkLusa" />
         </a>
-        <nav>
-          <a href="#services">Serviços</a>
-          <a href="#numbers">Números</a>
-          <a href="#testimonials">Depoimentos</a>
-          <a class="button button-secondary" href="#contact">Orçamento</a>
+        <nav class="site-nav" aria-label="Navegação principal">
+          <a href="#inicio">Início</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#sobre-nos">Sobre Nós</a>
+          <a href="#contactos">Contactos</a>
         </nav>
+        <a class="button button-primary header-cta" href="#contactos">Pedir Orçamento</a>
       </div>
     </header>
 
-    <main>
-      <section class="hero hero-sparklusa">
-        <div class="container hero-grid hero-compact">
+    <main id="top">
+      <section id="inicio" class="hero">
+        <div class="container hero-grid">
           <div class="hero-copy">
-            <span class="eyebrow">Energia solar e iluminação exterior de referência</span>
-            <h1>Instalações solares, carregadores VE e iluminação paisagística premium.</h1>
-            <p>Projetos técnicos e estéticos para moradias de luxo, resorts e clientes premium no Algarve.</p>
+            <span class="eyebrow">Energia Solar e Soluções Elétricas</span>
+            <h1>Energia Solar e Soluções Elétricas em Portugal</h1>
+            <p>
+              Instalação, manutenção e assistência técnica para habitação, empresas e espaços
+              exteriores.
+            </p>
             <div class="hero-actions">
-              <a class="button" href="#contact">Pedir orçamento grátis</a>
-              <a class="button button-secondary" href="#services">Ver serviços</a>
+              <a class="button button-primary" href="#contactos">Pedir orçamento</a>
+              <a class="button button-secondary" href="#servicos">Ver serviços</a>
             </div>
-            <div class="hero-meta">
-              <div><strong>Sem compromisso</strong> com proposta em 24h</div>
-              <div><strong>Atendimento técnico</strong> em Português e Inglês</div>
-            </div>
+            <ul class="hero-notes" aria-label="Notas de destaque">
+              <li>Atendimento em Português e Inglês</li>
+              <li>Soluções chave-na-mão</li>
+              <li>Instalação profissional</li>
+            </ul>
           </div>
-          <div class="hero-media">
-            <img src="media/pexels/pexels-michael-pointner-134459625-18316987.jpg" alt="Instalação solar premium" />
+          <div class="hero-panel">
+            <div class="hero-panel-card">
+              <p class="hero-panel-label">Foco técnico</p>
+              <h2>Projetos claros, rápidos e fáceis de acompanhar</h2>
+              <p>
+                Dimensionamento ajustado, execução cuidada e apoio antes, durante e depois da
+                instalação.
+              </p>
+              <div class="hero-panel-grid">
+                <div>
+                  <strong>Solar</strong>
+                  <span>Autoconsumo, baterias e backup</span>
+                </div>
+                <div>
+                  <strong>Elétrica</strong>
+                  <span>Remodelações, quadros e avarias</span>
+                </div>
+                <div>
+                  <strong>Exterior</strong>
+                  <span>Fachadas, jardins e zonas de passagem</span>
+                </div>
+                <div>
+                  <strong>VE</strong>
+                  <span>Wallbox e circuitos dedicados</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="services" class="section services">
+      <section id="servicos" class="section">
         <div class="container">
           <div class="section-header">
-            <span class="eyebrow">Serviços especializados</span>
-            <h2>Foco em solar, carregadores VE e iluminação exterior</h2>
-            <p>Projetos pensados para clientes premium que procuram estética, eficiência e operação confiável.</p>
+            <span class="eyebrow">Serviços principais</span>
+            <h2>Quatro áreas de intervenção com foco técnico</h2>
+            <p>
+              Estrutura simples, direta e fácil de perceber, pensada para clientes residenciais,
+              comerciais e pequenas empresas.
+            </p>
           </div>
+
           <div class="service-grid">
-            <article class="card">
-              <h3>Instalações solares</h3>
-              <p>Sistemas fotovoltaicos premium para moradias e empresas, com opções monofásicas, trifásicas, híbridas e off-grid.</p>
+            <article class="card service-card">
+              <div class="card-icon">☀</div>
+              <h3>Energia Solar</h3>
+              <p>
+                Sistemas fotovoltaicos para autoconsumo, com ou sem baterias, dimensionados de
+                acordo com o consumo e as necessidades de cada cliente.
+              </p>
+              <ul>
+                <li>Painéis solares</li>
+                <li>Inversores</li>
+                <li>Baterias</li>
+                <li>Backup energético</li>
+                <li>Monitorização</li>
+              </ul>
             </article>
-            <article class="card">
+
+            <article class="card service-card">
+              <div class="card-icon">⚡</div>
+              <h3>Instalações Elétricas</h3>
+              <p>
+                Execução, remodelação e manutenção de instalações elétricas em habitações, lojas,
+                escritórios e espaços técnicos.
+              </p>
+              <ul>
+                <li>Quadros elétricos</li>
+                <li>Remodelações</li>
+                <li>Infraestruturas</li>
+                <li>Assistência técnica</li>
+                <li>Diagnóstico de avarias</li>
+              </ul>
+            </article>
+
+            <article class="card service-card">
+              <div class="card-icon">✦</div>
+              <h3>Iluminação Exterior</h3>
+              <p>
+                Soluções de iluminação para jardins, fachadas, zonas exteriores e espaços
+                arquitetónicos, com foco na funcionalidade, segurança e estética.
+              </p>
+              <ul>
+                <li>Jardins</li>
+                <li>Caminhos exteriores</li>
+                <li>Fachadas</li>
+                <li>Iluminação LED</li>
+                <li>Projetos por zonas</li>
+              </ul>
+            </article>
+
+            <article class="card service-card">
+              <div class="card-icon">⛭</div>
               <h3>Carregadores VE</h3>
-              <p>Instalação de carregadores de veículos elétricos, incluindo integração técnica e provisionamento de circuito dedicado.</p>
-            </article>
-            <article class="card">
-              <h3>Iluminação exterior paisagística</h3>
-              <p>Iluminação de jardins e exteriores premium, com design técnico e controlo de LED arquitetónico.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="numbers" class="section numbers">
-        <div class="container">
-          <div class="section-header">
-            <span class="eyebrow">Os números falam por si</span>
-            <h2>Resultados reais para quem aposta no solar</h2>
-          </div>
-          <div class="numbers-grid">
-            <div class="stat-card">
-              <span class="stat-value">1500€+</span>
-              <p>Poupança média anual</p>
-            </div>
-            <div class="stat-card">
-              <span class="stat-value">4-6 anos</span>
-              <p>Retorno do investimento</p>
-            </div>
-            <div class="stat-card">
-              <span class="stat-value">25 anos</span>
-              <p>Garantia total do sistema</p>
-            </div>
-            <div class="stat-card">
-              <span class="stat-value">4 semanas</span>
-              <p>Tempo típico de instalação</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="testimonials" class="section testimonials">
-        <div class="container">
-          <div class="section-header">
-            <span class="eyebrow">O que dizem os nossos clientes</span>
-            <h2>Avaliações reais de quem já instalou</h2>
-          </div>
-          <div class="testimonial-grid">
-            <article class="testimonial-card">
-              <p>"A SPARKLUSA entregou uma instalação rápida e o sistema já está a reduzir a nossa fatura mensal."</p>
-              <strong>João, 16 painéis</strong>
-            </article>
-            <article class="testimonial-card">
-              <p>"Equipe profissional, atenção ao detalhe e um orçamento claro. Recomendo sem dúvida."</p>
-              <strong>Maria, bateria integrada</strong>
-            </article>
-            <article class="testimonial-card">
-              <p>"Do primeiro contacto à instalação, o serviço foi impecável. O retorno esperado é exatamente o prometido."</p>
-              <strong>Carlos, sistema residencial</strong>
+              <p>
+                Instalação de carregadores para veículos elétricos em habitações, garagens,
+                condomínios e empresas.
+              </p>
+              <ul>
+                <li>Circuitos dedicados</li>
+                <li>Proteções elétricas</li>
+                <li>Wallbox</li>
+                <li>Integração com solar</li>
+                <li>Instalação segura</li>
+              </ul>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section process">
+      <section class="section section-tinted">
         <div class="container">
           <div class="section-header">
-            <span class="eyebrow">Processo simples</span>
-            <h2>Do orçamento à instalação em 4 passos</h2>
+            <span class="eyebrow">Porquê escolher a SparkLusa?</span>
+            <h2>Uma abordagem técnica, clara e ajustada ao projeto</h2>
+          </div>
+          <div class="benefits-grid">
+            <article class="benefit-card">
+              <h3>Soluções adaptadas a cada cliente</h3>
+              <p>Projetos pensados em função do espaço, consumo, uso e orçamento disponível.</p>
+            </article>
+            <article class="benefit-card">
+              <h3>Instalação técnica e cuidada</h3>
+              <p>Execução limpa, organizada e com atenção à qualidade da infraestrutura.</p>
+            </article>
+            <article class="benefit-card">
+              <h3>Apoio antes, durante e depois da obra</h3>
+              <p>Acompanhamento próximo para garantir clareza, segurança e continuidade.</p>
+            </article>
+            <article class="benefit-card">
+              <h3>Equipamentos de marcas reconhecidas</h3>
+              <p>Seleção de materiais e equipamentos com foco em fiabilidade e durabilidade.</p>
+            </article>
+            <article class="benefit-card">
+              <h3>Orçamentos claros e acompanhamento próximo</h3>
+              <p>Comunicação objetiva, proposta transparente e resposta orientada à decisão.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="eyebrow">Processo de trabalho</span>
+            <h2>Do primeiro contacto à instalação final</h2>
           </div>
           <div class="process-grid">
             <article class="process-step">
               <span>01</span>
-              <h3>Consulta gratuita</h3>
-              <p>Falamos consigo em poucos minutos para entender as suas necessidades solares.</p>
+              <h3>Primeiro contacto</h3>
+              <p>Percebemos o tipo de intervenção, localização e necessidades do cliente.</p>
             </article>
             <article class="process-step">
               <span>02</span>
-              <h3>Avaliação no local</h3>
-              <p>Medimos o local e desenhamos um sistema otimizado para a sua casa.</p>
+              <h3>Avaliação técnica</h3>
+              <p>Analisamos o local, consumos, infraestrutura existente e condições de instalação.</p>
             </article>
             <article class="process-step">
               <span>03</span>
-              <h3>Instalação e ligação</h3>
-              <p>Instalação profissional com equipamentos de qualidade e registo completo do sistema.</p>
+              <h3>Proposta</h3>
+              <p>Apresentamos uma solução ajustada, com orçamento claro e faseamento quando necessário.</p>
             </article>
             <article class="process-step">
               <span>04</span>
-              <h3>Poupança a começar</h3>
-              <p>O seu sistema entra em funcionamento e começa a gerar energia limpa imediatamente.</p>
+              <h3>Instalação e acompanhamento</h3>
+              <p>Executamos a instalação, testamos o sistema e damos apoio após a conclusão.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section id="contact" class="section contact contact-highlight">
+      <section id="projetos" class="section section-tinted">
+        <div class="container">
+          <div class="section-header">
+            <span class="eyebrow">Projetos</span>
+            <h2>Estrutura preparada para projetos reais</h2>
+            <p>Área organizada por categorias para mostrar trabalhos concluídos e futuras referências.</p>
+          </div>
+
+          <div class="project-categories">
+            <span>Solar</span>
+            <span>Instalações elétricas</span>
+            <span>Iluminação exterior</span>
+            <span>Carregadores VE</span>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card">
+              <div class="project-thumb project-thumb-solar"></div>
+              <h3>Solar</h3>
+              <p>Instalações fotovoltaicas, baterias, backup e monitorização.</p>
+            </article>
+            <article class="project-card">
+              <div class="project-thumb project-thumb-electric"></div>
+              <h3>Instalações elétricas</h3>
+              <p>Quadros, remodelações, circuitos e diagnóstico técnico.</p>
+            </article>
+            <article class="project-card">
+              <div class="project-thumb project-thumb-lighting"></div>
+              <h3>Iluminação exterior</h3>
+              <p>Fachadas, jardins, caminhos e zonas arquitetónicas.</p>
+            </article>
+            <article class="project-card">
+              <div class="project-thumb project-thumb-ev"></div>
+              <h3>Carregadores VE</h3>
+              <p>Wallbox, proteções elétricas e integração com solar.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="sobre-nos" class="section">
+        <div class="container about-grid">
+          <div>
+            <span class="eyebrow">Sobre Nós</span>
+            <h2>Uma empresa portuguesa dedicada a soluções elétricas e energia solar</h2>
+          </div>
+          <div class="about-copy">
+            <p>
+              A SparkLusa é uma empresa portuguesa dedicada a soluções elétricas, energia solar e
+              iluminação. Trabalhamos com clientes particulares e empresas, procurando entregar
+              soluções seguras, eficientes e ajustadas a cada projeto.
+            </p>
+            <p>
+              Com experiência em instalações elétricas, sistemas fotovoltaicos, iluminação
+              exterior e carregadores para veículos elétricos, acompanhamos cada trabalho desde a
+              análise técnica até à instalação final.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section cta-section">
+        <div class="container cta-card">
+          <div>
+            <span class="eyebrow">Tem um projeto em mente?</span>
+            <h2>Fale connosco e peça uma avaliação técnica.</h2>
+            <p>
+              Seja para instalação elétrica, sistema solar, iluminação exterior ou carregador VE,
+              ajudamos a definir a solução certa para o seu espaço.
+            </p>
+          </div>
+          <div class="cta-actions">
+            <a class="button button-primary" href="#contactos">Pedir orçamento</a>
+            <a class="button button-secondary" href="https://wa.me/351000000000" target="_blank" rel="noreferrer">
+              Contactar por WhatsApp
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contactos" class="section contact-section">
         <div class="container contact-grid">
           <div>
-            <span class="eyebrow">Fale connosco</span>
-            <h2>Solicite o seu orçamento técnico grátis</h2>
-            <p>Preencha o formulário e contactamo-lo em até 24 horas para propostas de instalações solares, carregadores VE ou iluminação exterior.</p>
+            <span class="eyebrow">Contactos</span>
+            <h2>Peça o seu orçamento</h2>
+            <p>
+              Selecione o serviço pretendido e descreva o projeto. Respondemos com uma proposta
+              clara e orientada para a sua necessidade.
+            </p>
+            <div class="contact-details">
+              <p><strong>Localização:</strong> Algarve / Portugal</p>
+              <p><strong>Email:</strong> <a href="mailto:afonsoalves.195@gmail.com">afonsoalves.195@gmail.com</a></p>
+              <p><strong>Serviços:</strong> Energia Solar, Instalações Elétricas, Iluminação Exterior, Carregadores VE</p>
+            </div>
           </div>
           <form id="contact-form" class="contact-form">
             <label>
               Nome
-              <input type="text" name="name" placeholder="Primeiro nome" required />
+              <input type="text" name="name" placeholder="O seu nome" required />
             </label>
             <label>
               Email
@@ -169,19 +328,50 @@
               <input type="tel" name="phone" placeholder="Telefone" required />
             </label>
             <label>
+              Serviço
+              <select name="service" required>
+                <option value="">Selecione um serviço</option>
+                <option>Energia Solar</option>
+                <option>Instalações Elétricas</option>
+                <option>Iluminação Exterior</option>
+                <option>Carregadores VE</option>
+              </select>
+            </label>
+            <label>
               Projeto
-              <textarea name="message" rows="4" placeholder="Descreva o seu projeto" ></textarea>
+              <textarea name="message" rows="5" placeholder="Descreva o seu projeto"></textarea>
             </label>
             <button type="submit">Enviar pedido</button>
-            <p id="form-status" class="form-status"></p>
+            <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
           </form>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="container">
-        <p>© 2026 SPARKLUSA. Built in projs/website.</p>
+      <div class="container footer-grid">
+        <div>
+          <img class="footer-logo" src="media/logo/logo_cropped.png" alt="SparkLusa" />
+          <p>Soluções técnicas de energia solar, instalações elétricas, iluminação exterior e carregadores VE.</p>
+        </div>
+        <div>
+          <h3>Serviços</h3>
+          <a href="#servicos">Energia Solar</a>
+          <a href="#servicos">Instalações Elétricas</a>
+          <a href="#servicos">Iluminação Exterior</a>
+          <a href="#servicos">Carregadores VE</a>
+        </div>
+        <div>
+          <h3>Contactos</h3>
+          <a href="mailto:afonsoalves.195@gmail.com">Email</a>
+          <a href="#contactos">Pedido de orçamento</a>
+          <span>Algarve / Portugal</span>
+        </div>
+        <div>
+          <h3>Legal</h3>
+          <a href="#">Política de Privacidade</a>
+          <a href="#">Livro de Reclamações</a>
+        </div>
       </div>
     </footer>
 

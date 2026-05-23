@@ -1,16 +1,18 @@
 const form = document.getElementById('contact-form');
 const status = document.getElementById('form-status');
 
-form.addEventListener('submit', (event) => {
-  event.preventDefault();
+if (form && status) {
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
 
-  const formData = new FormData(form);
-  const name = formData.get('name');
-  const email = formData.get('email');
-  const message = formData.get('message');
+    const formData = new FormData(form);
+    const name = String(formData.get('name') || '').trim();
+    const service = String(formData.get('service') || '').trim();
 
-  status.textContent = `Thanks, ${name}! Your message has been received.`;
-  form.reset();
+    status.textContent = name
+      ? `Obrigado, ${name}. Recebemos o seu pedido para ${service || 'o seu projeto'}.`
+      : 'Obrigado. Recebemos o seu pedido.';
 
-  console.log({ name, email, message });
-});
+    form.reset();
+  });
+}
