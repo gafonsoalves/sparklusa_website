@@ -50,11 +50,13 @@
 
       .message {
         margin: 0;
-        font-size: clamp(1.05rem, 2vw, 1.25rem);
+        font-size: clamp(0.95rem, 3.8vw, 1.25rem);
         font-weight: 600;
         letter-spacing: 0.08em;
         text-transform: uppercase;
         color: var(--blue);
+        line-height: 1.25;
+        max-width: 16ch;
       }
 
       .submessage {
@@ -62,6 +64,25 @@
         max-width: 32rem;
         color: var(--muted);
         line-height: 1.6;
+      }
+
+      @media (max-width: 480px) {
+        body {
+          padding: 1.25rem;
+        }
+
+        .wrap {
+          gap: 0.85rem;
+        }
+
+        .logo {
+          width: min(250px, 78vw);
+        }
+
+        .message {
+          letter-spacing: 0.05em;
+          max-width: 10ch;
+        }
       }
 
       .contact {
